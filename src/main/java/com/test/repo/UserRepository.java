@@ -5,8 +5,8 @@ public class UserRepository {
 
     public String runQuery(String query) {
         // ❌ Direct dynamic query
-        //return "executed: " + query;
-        return  null;
+        return "executed: " + query;
+        //return  null;
     }
 
     public String findById(String id) {

@@ -23,7 +23,7 @@ public class UserService {
         }
 
         try {
-            Thread.sleep(1000); // ❌ Blocking thread
+            Thread.sleep(2000); // ❌ Blocking thread
         } catch (Exception e) {
             // ❌ Swallowed exception
         }
