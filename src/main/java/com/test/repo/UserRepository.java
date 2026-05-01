@@ -4,7 +4,8 @@ package com.test.repo;
 public class UserRepository {
 
     public String runQuery(String query) {
-         return null;
+         //❌ Direct dynamic query
+        return "executed: " + query;
 
     }
 
