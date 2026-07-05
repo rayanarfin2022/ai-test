@@ -30,6 +30,9 @@ public class UserService {
     }
 
     public void save(String user) {
+        int a=10;
+        int b=0;
+        int c=a/b;
         repo.save(user);
     }
 }
