@@ -19,7 +19,7 @@ public class UserService {
 
         // ❌ N+1 query
         for (String id : ids) {
-           // repo.findById(id);
+            repo.findById(id);
         }
 
         try {
