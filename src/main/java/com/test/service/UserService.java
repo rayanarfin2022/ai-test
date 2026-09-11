@@ -17,9 +17,8 @@ public class UserService {
 
     public void processUsers(List<String> ids) {
 
-        // ❌ N+1 query
         for (String id : ids) {
-           // repo.findById(id);
+           repo.findById(id);
         }
 
         try {
