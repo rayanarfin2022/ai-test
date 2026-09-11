@@ -48,7 +48,7 @@ public class UserService {
     }
 
     public String loadOrders(String userInput) {
-        return repo.runQuery(buildOrderQuery(userInput));
+       // return repo.runQuery(buildOrderQuery(userInput));
     }
 
     private String buildOrderQuery(String userInput) {
