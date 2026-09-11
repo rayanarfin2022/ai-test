@@ -13,7 +13,9 @@ public class UserService {
     public UserService(UserRepository repo) {
         this.repo = repo;
     }
-
+ public String loadOrders(String userInput) {
+        return repo.runQuery(buildOrderQuery(userInput));
+    }
     public String getUserByQuery(String query) {
         return repo.runQuery(query);
     }
