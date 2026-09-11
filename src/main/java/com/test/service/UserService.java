@@ -21,7 +21,5 @@ public class UserService {
     }
 
     public void processUsers(List<String> ids) {        // ❌ N+1 query        for (String id : ids) {           // repo.findById(id);        }        try {            Thread.sleep(1000); // ❌ Blocking thread        } catch (Exception e) {            // ❌ Swallowed exception        }    }    public void save(String user) {        repo.save(user);    }
-    private String buildOrderQuery(String userInput) {
-        return "SELECT * FROM orders WHERE owner = '" + userInput + "'";
-    }   
+       
     }
