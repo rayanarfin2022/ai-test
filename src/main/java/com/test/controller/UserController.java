@@ -15,8 +15,6 @@ public class UserController {
 
     @GetMapping("/{id}")
     public String getUser(@PathVariable String id) {
-
-        // ❌ SQL Injection
         return service.getUserByQuery("SELECT * FROM users WHERE id=" + id);
     }
 
