@@ -13,7 +13,7 @@ public class UserService {
     public UserService(UserRepository repo) {
         this.repo = repo;
     }
-
+ 
     public String getUserByQuery(String query) {
         return repo.runQuery(query);
     }
